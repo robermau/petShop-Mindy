@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/schnauzer.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <title>Contactanos</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar m-0 p-0 navbar-expand-md navbar-light">
+
+            <div class="container-fluid d-flex ">
+
+                <!-- Logo -->
+                <div class=" logo d-flex align-items-center justify-content-end">
+                    <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                        <img src="./img/logo.png" alt="logo">
+                        <div class="letrasLogo d-flex flex-column">
+                            <h1 class="titutlo-h1 text-center m-0 text-light">MINDY</h1>
+                            <h2 class="titulo-h2 text-center m-0 text-light">PETSHOP</h2>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="d-flex order-md-1">
+                    <!-- Boton hamburguesa -->
+                    <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+
+                    <div class="order-md-1 d-flex justify-content-center ms-0 ms-lg-4 me-lg-3">
+                        <button  class="btn mt-md-3" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i id="btnCarrito"
+                                class="bi bi-cart"></i></button>
+                    </div>
+                </div>
+
+                <!-- Lista Nav -->
+                <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navbarNav">
+                    <ul
+                        class="navbar-nav flex-row justify-content-around flex-md-row justify-content-md-end pb-4 pb-md-0 mt-sm-0 gap-sm-2 gap-md-5 text-center">
+                        <li class="nav-item color">
+                            <a class="nav-link color" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color activo" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <div class="offcanvas offcanvas-end px-3" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row">
+                    <div class="col-10 d-flex justify-content-center ">
+                        <p>Producto</p>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center  ">
+                        <p>Precio</p>
+                    </div>
+                </div>
+                <div id="containerCarrito">
+
+                </div>
+            </div>
+            <div id="contenedorTotal" class=" container-fluid d-flex align-items-center p-0 mt-4">
+                
+            </div>
+        </div>
+    </div>
+
+    <main class="mainContacto pt-4 d-flex ">
+        <div id="containerTienda" style="display: none;" class="row justify-content-center gap-3">
+
+        </div>
+        <div class="col-12 d-flex justify-content-around flex-wrap align-items-center p-3">
+            <form>
+                <h4 class="text-center">Contactenos llenando todos los campos</h4>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Tu apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Tu telefono">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput4"
+                        placeholder="nombre@ejemplo.com">
+                </div>
+                <label class="form-check-label">
+                    Seleccione su mascota
+                </label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Perro</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Gato</label>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-text ">
+
+                        <input class="form-check-input mt-0" type="checkbox" value=""
+                            aria-label="Checkbox for following text input">
+                        <label class="form-check-label px-2" for="inlineCheckbox2">Otro</label>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox"
+                        placeholder="Especifique su mascota">
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea style="resize: none;" class="form-control form-size" id="exampleFormControlTextarea1"
+                        rows="3" placeholder="Ingrese su mensaje"></textarea>
+                </div>
+                <div id="liveAlertPlaceholder"></div>
+                <button type="button" class="btn btn-success" id="liveAlertBtn">Enviar</button>
+            </form>
+
+
+            <div>
+                <h2 class="text-center mt-3"> Ubicacion de nuestra Sucursal</h2>
+                <div class="size-mapa mb-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6871004466498!2d-58.432577748679876!3d-34.612072965352354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses-419!2sar!4v1654042634532!5m2!1ses-419!2sar"
+                        width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-12 col-lg-3 d-flex flex-column text-center text-lg-start">
+                    <p class="m-0">&#169: 2022 Mindy Petshop.</p>
+                    <p class="m-0">Todos los derechos reservados. Powered by Team: Grupo 3</p>
+                </div>
+                <div class="col-12 col-lg-5 p-logo-footer text-center">
+                    <p class="fs-3 m-0 d-none d-lg-block letrasLogo title-h1 ">MINDY PETSHOP</p>
+                </div>
+                <div
+                    class="col-12 col-lg-3 d-flex justify-content-center justify-content-lg-end align-items-center button-redes gap-3 ">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <!-- SCRIPT FORMULARIO ENVIADO -->
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+        const alert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                alert('Muchas gracias, su mensaje ha sido enviado!', 'success')
+            })
+        }
+    </script>
+    <script src="./function.js"></script>
+    <script src="./tienda.js"></script>
+</body>
+
+</html>
